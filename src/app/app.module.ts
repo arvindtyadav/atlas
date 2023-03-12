@@ -9,6 +9,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { SETTINGS as AUTH_SETTINGS } from '@angular/fire/compat/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 
 
@@ -20,7 +21,8 @@ import { SETTINGS as AUTH_SETTINGS } from '@angular/fire/compat/auth';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    provideAuth(() => getAuth())
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase())
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
   bootstrap: [AppComponent]
