@@ -7,6 +7,11 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { SETTINGS as AUTH_SETTINGS } from '@angular/fire/compat/auth';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,10 +19,10 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireModule.initializeApp(environment.firebase),
     provideAuth(() => getAuth())
   ],
-  providers: [],
+  providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
