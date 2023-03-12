@@ -1,3 +1,11 @@
+<h1>
+  Firebase + Angular Demo
+</h1>
+
+<h3>
+  Implemented Firebase User auth through Google & Realtime database in Angular project
+</h3>
+
 <div *ngIf="auth.user | async as user; else showLogin">
   <h1>Hello {{ user.displayName }}!</h1>
   <button (click)="logout()">Logout</button>
@@ -9,7 +17,15 @@
 </ng-template>
 
 <div>
-  Hello World!
+  <h1>From Firebase Realtime Database:</h1>
 </div>
+
+<ul>
+  <li *ngFor="let item of items | async">
+     {{ item | json }}
+  </li>
+</ul>
+
+My database items^^
 
 <router-outlet></router-outlet>
