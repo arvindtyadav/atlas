@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "atlas:build:production",
+            "firebaseProject": "atlas-56e5b",
+            "firebaseHostingSite": "atlas-56e5b"
+          }
         }
       }
     }

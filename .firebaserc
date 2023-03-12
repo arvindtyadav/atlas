@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "atlas-56e5b": {
+      "hosting": {
+        "atlas": [
+          "atlas-56e5b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "atlas-56e5b"
+  }
+}
