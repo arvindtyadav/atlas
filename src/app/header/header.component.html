@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/home">
       <img src="../assets/logo-light.png" alt="Atilas Atlas logo" width="30" height="30">
       Atilas Atlas
     </a>
@@ -10,22 +10,23 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Plan a route</a>
+          <a class="nav-link" href="">Plan a route</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Building directory</a>
+          <a class="nav-link" href="/directory">Building directory</a>
         </li>
         <li class="nav-item" *ngIf="auth.user | async as user">
-          <a class="nav-link" href="#" (click)="logout()" *ngIf="user">
-            <i class="fab fa-google"></i> Sign out
-          </a>
-          <a class="nav-link" href="#" (click)="login()" *ngIf="!user">
-            <i class="fab fa-google"></i> Login with Google
-          </a>
+          <a class="nav-link" href="/dashboard">Saved routes</a>
         </li>
-        <li class="nav-item" *ngIf="auth.user | async as user">
-          <a class="nav-link" href="#">Saved routes</a>
+        <li class="nav-item">
+          <div *ngIf="auth.user | async as user; else showLogin">
+            <a class="nav-link" (click)="logout()">Logout</a>
+          </div>
+          <ng-template #showLogin>
+            <a class="nav-link" (click)="login()">Login with Google</a>
+          </ng-template>
         </li>
+        
       </ul>
     </div>
   </div>
