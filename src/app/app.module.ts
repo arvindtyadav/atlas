@@ -10,12 +10,20 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { SETTINGS as AUTH_SETTINGS } from '@angular/fire/compat/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DirectoryComponent } from './directory/directory.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    DashboardComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,
