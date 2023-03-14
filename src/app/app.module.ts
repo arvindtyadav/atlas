@@ -14,7 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DirectoryComponent } from './directory/directory.component';
+import { PlanRouteComponent } from './plan-route/plan-route.component';
 
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -23,14 +26,17 @@ import { DirectoryComponent } from './directory/directory.component';
     HomeComponent,
     HeaderComponent,
     DashboardComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    PlanRouteComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase())
+    provideDatabase(() => getDatabase()),
+    LeafletModule
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
   bootstrap: [AppComponent]

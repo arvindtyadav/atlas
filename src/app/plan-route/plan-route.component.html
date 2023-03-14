@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h1 class="form-title">Campus Route Planner</h1>
+    <form>
+      <!-- Starting Point Input -->
+      <div class="form-group">
+        <label for="start"><i class="fas fa-map-marker-alt"></i> Starting Point:</label>
+        <input type="text" class="form-control" id="start" placeholder="Enter starting point">
+      </div>
+
+      <!-- Destination Input -->
+      <div class="form-group">
+        <label for="destination"><i class="fas fa-flag"></i> Destination:</label>
+        <input type="text" class="form-control" id="destination" placeholder="Enter destination">
+      </div>
+
+      <!-- Transportation Dropdown -->
+      <div class="form-group">
+        <label for="transportation"><i class="fas fa-walking"></i> Mode of Transportation:</label>
+        <select class="form-control" id="transportation">
+          <option>Walking</option>
+          <option>Cycling</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Stops Input (optional) -->
+      <div class="form-group">
+        <label for="stops"><i class="fas fa-route"></i> Stops along the way:</label>
+        <input type="text" class="form-control" id="stops" placeholder="Enter stops (optional)">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary">Add route</button>
+      </div>
+    </form>
+  </div>
