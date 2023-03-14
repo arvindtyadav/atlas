@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DirectoryComponent } from './directory/directory.component';
+import { PlanRouteComponent } from './plan-route/plan-route.component';
 
 
 
@@ -23,7 +24,8 @@ import { DirectoryComponent } from './directory/directory.component';
     HomeComponent,
     HeaderComponent,
     DashboardComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    PlanRouteComponent
   ],
   imports: [
     BrowserModule,
