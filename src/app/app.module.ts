@@ -16,6 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { PlanRouteComponent } from './plan-route/plan-route.component';
 
+import { FormsModule } from '@angular/forms';
+
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { MapComponent } from './map/map.component';
 
@@ -36,7 +38,8 @@ import { MapComponent } from './map/map.component';
     AngularFireModule.initializeApp(environment.firebase),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    LeafletModule
+    LeafletModule,
+    FormsModule
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
   bootstrap: [AppComponent]

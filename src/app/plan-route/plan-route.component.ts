@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./plan-route.component.scss']
 })
 export class PlanRouteComponent {
-
+  name = "default";
 }
