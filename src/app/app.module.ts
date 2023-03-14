@@ -16,8 +16,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { PlanRouteComponent } from './plan-route/plan-route.component';
 
+import { FormsModule } from '@angular/forms';
+
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { MapComponent } from './map/map.component';
+
+import {TreeModule} from 'primeng/tree';
+import {ButtonModule} from 'primeng/button';
+import { NodeService } from './nodeservice';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -36,9 +44,13 @@ import { MapComponent } from './map/map.component';
     AngularFireModule.initializeApp(environment.firebase),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    LeafletModule
+    LeafletModule,
+    FormsModule,
+    TreeModule,
+    ButtonModule,
+    HttpClientModule
   ],
-  providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
+  providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }, NodeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

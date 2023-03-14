@@ -31,8 +31,10 @@
             ],
             "styles": [
               "./node_modules/leaflet/dist/leaflet.css",
-              "src/styles.scss"
-
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },

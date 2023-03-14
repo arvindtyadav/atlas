@@ -1,0 +1,315 @@
+{
+    "data": [
+      {
+        "label": "Academic Buildings",
+        "data": "Academic Buildings Folder",
+        "expandedIcon": "pi pi-folder-open",
+        "collapsedIcon": "pi pi-folder",
+        "children": [
+          {
+            "label": "ABS Engineering Center",
+            "icon": "pi pi-building",
+            "data": "ABS Engineering Center"
+          },
+          {
+            "label": "Babbio Center",
+            "icon": "pi pi-building",
+            "data": "Babbio Center"
+          },
+          {
+            "label": "Burchard Building",
+            "icon": "pi pi-building",
+            "data": "Burchard Building"
+          },
+          {
+            "label": "Carnegie Laboratory",
+            "icon": "pi pi-building",
+            "data": "Carnegie Laboratory"
+          },
+          {
+            "label": "Davidson Laboratory",
+            "icon": "pi pi-building",
+            "data": "Davidson Laboratory"
+          },
+          {
+            "label": "Edwin A. Stevens Hall & DeBaun Auditorium",
+            "icon": "pi pi-building",
+            "data": "Edwin A. Stevens Hall & DeBaun Auditorium"
+          },
+          {
+            "label": "Gateway Academic Center",
+            "icon": "pi pi-building",
+            "data": "Gateway Academic Center"
+          },
+          {
+            "label": "Gianforte Family Hall",
+            "icon": "pi pi-building",
+            "data": "Gianforte Family Hall"
+          },
+          {
+            "label": "South Hall",
+            "icon": "pi pi-building",
+            "data": "South Hall"
+          },
+          {
+            "label": "Kenneth J. Altorfer Academic Complex",
+            "icon": "pi pi-building",
+            "data": "Kenneth J. Altorfer Academic Complex"
+          },
+          {
+            "label": "Kidde Hall",
+            "icon": "pi pi-building",
+            "data": "Kidde Hall"
+          },
+          {
+            "label": "McLean Hall",
+            "icon": "pi pi-building",
+            "data": "McLean Hall"
+          },
+          {
+            "label": "Morton Hall",
+            "icon": "pi pi-building",
+            "data": "Morton Hall"
+          },
+          {
+            "label": "Nicoll Environmental Laboratory",
+            "icon": "pi pi-building",
+            "data": "Nicoll Environmental Laboratory"
+          },
+          {
+            "label": "North Building",
+            "icon": "pi pi-building",
+            "data": "North Building"
+          },
+          {
+            "label": "Peirce Hall",
+            "icon": "pi pi-building",
+            "data": "Peirce Hall"
+          },
+          {
+            "label": "Rocco Technology Center",
+            "icon": "pi pi-building",
+            "data": "Rocco Technology Center"
+          },
+          {
+            "label": "Samuel C. Williams Library",
+            "icon": "pi pi-building",
+            "data": "Samuel C. Williams Library"
+          }
+        ]
+      },
+      {
+        "label": "Administrative Buildings",
+        "data": "Administrative Buildings Folder",
+        "expandedIcon": "pi pi-folder-open",
+        "collapsedIcon": "pi pi-folder",
+        "children": [
+          {
+            "label": "1 Ninth Street",
+            "icon": "pi pi-building",
+            "data": "1 Ninth Street"
+          },
+          {
+            "label": "2 Ninth Street",
+            "icon": "pi pi-building",
+            "data": "2 Ninth Street"
+          },
+          {
+            "label": "807 Castle Point Terrace",
+            "icon": "pi pi-building",
+            "data": "807 Castle Point Terrace"
+          },
+          {
+            "label": "Gatehouse",
+            "icon": "pi pi-building",
+            "data": "Gatehouse"
+          },
+          {
+            "label": "Griffith Building",
+            "icon": "pi pi-building",
+            "data": "Griffith Building"
+          },
+          {
+            "label": "Hoxie House",
+            "icon": "pi pi-building",
+            "data": "Hoxie House"
+          },
+          {
+            "label": "Ruesterholz Admissions Center",
+            "icon": "pi pi-building",
+            "data": "Ruesterholz Admissions Center"
+          },
+          {
+            "label": "Student Center",
+            "icon": "pi pi-building",
+            "data": "Student Center"
+          },
+          {
+            "label": "Student Wellness Center",
+            "icon": "pi pi-building",
+            "data": "Student Wellness Center"
+          },
+          {
+            "label": "Wesley J. Howe Center",
+            "icon": "pi pi-building",
+            "data": "Wesley J. Howe Center"
+          },
+          {
+            "label": "University Center Complex",
+            "icon": "pi pi-building",
+            "data": "University Center Complex"
+          }
+        ]
+      },
+      {
+        "label": "Residence Halls",
+        "data": "Residence Halls Folder",
+        "expandedIcon": "pi pi-folder-open",
+        "collapsedIcon": "pi pi-folder",
+        "children": [
+        {
+        "label": "600 River Terrace",
+        "icon": "pi pi-home",
+        "data": "600 River Terrace"
+        },
+        {
+        "label": "602 River Terrace",
+        "icon": "pi pi-home",
+        "data": "602 River Terrace"
+        },
+        {
+        "label": "604 River Terrace (Gibb House)",
+        "icon": "pi pi-home",
+        "data": "604 River Terrace (Gibb House)"
+        },
+        {
+        "label": "606 River Terrace",
+        "icon": "pi pi-home",
+        "data": "606 River Terrace"
+        },
+        {
+        "label": "Castle Point Hall",
+        "icon": "pi pi-home",
+        "data": "Castle Point Hall"
+        },
+        {
+        "label": "Davis Hall",
+        "icon": "pi pi-home",
+        "data": "Davis Hall"
+        },
+        {
+        "label": "Humphreys Hall",
+        "icon": "pi pi-home",
+        "data": "Humphreys Hall"
+        },
+        {
+        "label": "Jonas Hall",
+        "icon": "pi pi-home",
+        "data": "Jonas Hall"
+        },
+        {
+        "label": "Lore-El Center",
+        "icon": "pi pi-home",
+        "data": "Lore-El Center"
+        },
+        {
+        "label": "Palmer Hall",
+        "icon": "pi pi-home",
+        "data": "Palmer Hall"
+        }
+        ]
+        },
+        {
+        "label": "Residential Towers",
+        "data": "Residential Towers Folder",
+        "expandedIcon": "pi pi-folder-open",
+        "collapsedIcon": "pi pi-folder",
+        "children": [
+        {
+        "label": "Harries Tower",
+        "icon": "pi pi-home",
+        "data": "Harries Tower"
+        },
+        {
+        "label": "South Tower",
+        "icon": "pi pi-home",
+        "data": "South Tower"
+        }
+        ]
+        },
+        {
+        "label": "Parking Facilities",
+        "data": "Parking Facilities Folder",
+        "expandedIcon": "pi pi-folder-open",
+        "collapsedIcon": "pi pi-folder",
+        "children": [
+        {
+        "label": "8th St Lot",
+        "icon": "pi pi-car",
+        "data": "8th St Lot"
+        },
+        {
+        "label": "Babbio Center Garage",
+        "icon": "pi pi-car",
+        "data": "Babbio Center Garage"
+        },
+        {
+        "label": "Castle Point Hall Lot",
+        "icon": "pi pi-car",
+        "data": "Castle Point Hall Lot"
+        },
+        {
+        "label": "Howe Center Lot",
+        "icon": "pi pi-car",
+        "data": "Howe Center Lot"
+        },
+        {
+        "label": "North Lot",
+        "icon": "pi pi-car",
+        "data": "North Lot"
+        },
+        {
+        "label": "River Lot",
+        "icon": "pi pi-car",
+        "data": "River Lot"
+        },
+        {
+        "label": "Ruesterholz Lots",
+        "icon": "pi pi-car",
+        "data": "Ruesterholz Lots"
+        }
+        ]
+        },
+        {
+          "label": "Fraternities & Sororities",
+          "data": "Fraternities & Sororities Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": []
+          },
+          {
+          "label": "Athletic Facilities",
+          "data": "Athletic Facilities Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+          {
+          "label": "Schaefer Athletic & Recreation Center",
+          "icon": "pi pi-building",
+          "data": "Schaefer Athletic & Recreation Center"
+          },
+          {
+          "label": "Tennis Office",
+          "icon": "pi pi-building",
+          "data": "Tennis Office"
+          },
+          {
+          "label": "Walker Gymnasium",
+          "icon": "pi pi-building",
+          "data": "Walker Gymnasium"
+          }
+        ]
+      }
+              
+    ]
+}
