@@ -21,6 +21,12 @@ import { FormsModule } from '@angular/forms';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { MapComponent } from './map/map.component';
 
+import {TreeModule} from 'primeng/tree';
+import {ButtonModule} from 'primeng/button';
+import { NodeService } from './nodeservice';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -39,9 +45,12 @@ import { MapComponent } from './map/map.component';
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     LeafletModule,
-    FormsModule
+    FormsModule,
+    TreeModule,
+    ButtonModule,
+    HttpClientModule
   ],
-  providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }],
+  providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }, NodeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
