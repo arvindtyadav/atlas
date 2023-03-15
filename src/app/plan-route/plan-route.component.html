@@ -1,33 +1,39 @@
 <div class="container mt-5">
   <h1 class="form-title">Campus Route Planner</h1>
   <form>
-    <!-- Starting Point Input -->
+
+
+
     <div class="form-group">
-      <label for="start"><i class="fas fa-map-marker-alt"></i> Start:  </label>
-      <p-autoComplete [(ngModel)]="start" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>        
+      <label for="start"><i class="fas fa-map-marker-alt"></i> Start:</label>
+      <div class="input-group">
+        <p-autoComplete [(ngModel)]="start" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>        
+      </div>
     </div>
 
-    <!-- Stops Input -->
     <div *ngFor="let stop of stops; let i = index">
       <div class="form-group">
-        <label for="stop{{i}}"><i class="fas fa-map-marker-alt"></i> Stop #{{i + 1}}: </label>
-        <p-autoComplete [(ngModel)]="stops[i]" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>
+        <label for="stop{{i}}"><i class="fas fa-map-marker-alt"></i> Stop #{{i + 1}}:</label>
+        <div class="input-group">
+          <p-autoComplete [(ngModel)]="stops[i]" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>
+          <div class="input-group-append">
+            <p-button label="Remove" icon="pi pi-minus" iconPos="right" (click)="removeStop(i)"></p-button>
+          </div>
+        </div>
       </div>
-      <p-button label="Delete" icon="pi pi-minus" iconPos="right" (click)="removeStop(i)"></p-button>
     </div>
 
-    <!-- Add and Delete Buttons -->
     <div class="form-group">
-      <p-button label="Add" icon="pi pi-plus" iconPos="right" (click)="addStop()"></p-button>
+      <label for="end"><i class="fas fa-map-marker-alt"></i> Destination:</label>
+      <div class="input-group">
+        <p-autoComplete [(ngModel)]="end" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>
+      </div>
     </div>
 
-    <!-- End Point Input -->
     <div class="form-group">
-      <label for="end"><i class="fas fa-map-marker-alt"></i> Destination:  </label>
-      <p-autoComplete [(ngModel)]="end" [ngModelOptions]="{standalone: true}" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true"></p-autoComplete>
+      <p-button label="Add Stop" icon="pi pi-plus" iconPos="right" (click)="addStop()"></p-button>
     </div>
 
-    <!-- Transportation Dropdown -->
     <div class="form-group">
       <label for="transportation"><i class="fas fa-walking"></i> Mode of Transportation:</label>
       <select class="form-control" id="transportation">
@@ -35,9 +41,15 @@
       </select>
     </div>
 
-    <!-- Submit Button -->
     <div class="form-group text-center">
-      <button type="submit" class="btn btn-primary">Add route</button>
+      <button type="submit" class="btn btn-primary">Add Route</button>
     </div>
+
+    <!-- <div class="form-group">
+      <label><i class="fas fa-file"></i>Import from file</label>
+      <div class="input-group">
+        <p-fileUpload name="myfile[]" url="./upload.php"></p-fileUpload>
+      </div>
+    </div> -->
   </form>
 </div>

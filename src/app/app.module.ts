@@ -26,6 +26,8 @@ import {ButtonModule} from 'primeng/button';
 import { NodeService } from './nodeservice';
 
 import { HttpClientModule } from '@angular/common/http';
+import {FileUploadModule} from 'primeng/fileupload';
+
 
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -54,7 +56,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ButtonModule,
     HttpClientModule,
     AutoCompleteModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FileUploadModule
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }, NodeService],
   bootstrap: [AppComponent]
