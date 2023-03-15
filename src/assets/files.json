@@ -218,8 +218,8 @@
         "data": "Palmer Hall"
         }
         ]
-        },
-        {
+      },
+      {
         "label": "Residential Towers",
         "data": "Residential Towers Folder",
         "expandedIcon": "pi pi-folder-open",
@@ -236,8 +236,8 @@
         "data": "South Tower"
         }
         ]
-        },
-        {
+      },
+      {
         "label": "Parking Facilities",
         "data": "Parking Facilities Folder",
         "expandedIcon": "pi pi-folder-open",
@@ -279,15 +279,15 @@
         "data": "Ruesterholz Lots"
         }
         ]
-        },
-        {
+      },
+      {
           "label": "Fraternities & Sororities",
           "data": "Fraternities & Sororities Folder",
           "expandedIcon": "pi pi-folder-open",
           "collapsedIcon": "pi pi-folder",
           "children": []
-          },
-          {
+      },
+      {
           "label": "Athletic Facilities",
           "data": "Athletic Facilities Folder",
           "expandedIcon": "pi pi-folder-open",

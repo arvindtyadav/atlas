@@ -1,0 +1,18 @@
+<div class="card">
+    <h1>Click here to save your route!</h1>
+    <p-timeline [value]="stops" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-loc>
+            <span class="custom-marker shadow-2" [style.backgroundColor]="loc.color">
+                <i [ngClass]="loc.icon"></i>
+            </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-loc>
+            <p-card [header]="loc.name" [subheader]="loc.address">
+                <img *ngIf="loc.image" [src]="loc.image" [alt]="loc.name" width="200" class="shadow-2" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                <button pButton label="Read more" class="p-button-text"></button>
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>
