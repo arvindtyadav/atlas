@@ -9,11 +9,22 @@ import { NodeService } from '../nodeservice';
 })
 
 export class DirectoryComponent implements OnInit{
-  files1!: TreeNode[];
+  buildings!: TreeNode[];
   
   constructor(private nodeService: NodeService) { }
 
   ngOnInit() {
-      this.nodeService.getFiles().then(files => this.files1 = files);
+      //this.nodeService.getBuildings().then(files => this.buildings = files);
+      
+      // this.nodeService.getBuildings().subscribe(
+      //   files => this.buildings = files
+      // );
+
+      const buildingsObserver = {
+        next: (files: TreeNode[]) => this.buildings = files,
+        error: (error: any) => console.error(error)
+      };
+      
+      this.nodeService.getBuildings().subscribe(buildingsObserver);
   }
 }
