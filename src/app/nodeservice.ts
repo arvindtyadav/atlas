@@ -23,5 +23,24 @@ export class NodeService {
           map(res => <TreeNode[]>res.data)
         );
     }
+
+    getBuildingNames(): Observable<string[]> {
+      return this.http.get<any>('./assets/files.json')
+        .pipe(
+          map(res => {
+            const buildingNames: string[] = [];
+    
+            for (let building of res.data) {
+              if (building.children) {
+                for (let child of building.children) {
+                  buildingNames.push(child.label);
+                }
+              }
+            }
+    
+            return buildingNames;
+          })
+        );
+    }
    
 }
