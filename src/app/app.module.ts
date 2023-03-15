@@ -27,6 +27,10 @@ import { NodeService } from './nodeservice';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -48,7 +52,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     TreeModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    AutoCompleteModule,
+    BrowserAnimationsModule
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }, NodeService],
   bootstrap: [AppComponent]
