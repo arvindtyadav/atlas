@@ -31,7 +31,10 @@ import {FileUploadModule} from 'primeng/fileupload';
 
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { RouteComponent } from './route/route.component';
 
+import {TimelineModule} from 'primeng/timeline';
+import { CardModule } from 'primeng/card'; // Add this import
 
 
 @NgModule({
@@ -42,7 +45,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     DashboardComponent,
     DirectoryComponent,
     PlanRouteComponent,
-    MapComponent
+    MapComponent,
+    RouteComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     AutoCompleteModule,
     BrowserAnimationsModule,
-    FileUploadModule
+    FileUploadModule,
+    TimelineModule,
+    CardModule
   ],
   providers: [{ provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } }, NodeService],
   bootstrap: [AppComponent]
