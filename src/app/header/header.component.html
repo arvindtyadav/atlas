@@ -1,13 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="/home">
-      <img src="../assets/logo-light.png" alt="Atilas Atlas logo" width="30" height="30">
-      Atilas Atlas
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home"><img src="../assets/logo-light.png" alt="Atilas Atlas logo" width="30" height="30">Atilas Atlas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="/plan">Plan a route</a>
@@ -26,7 +23,6 @@
             <a class="nav-link" (click)="login()">Login with Google</a>
           </ng-template>
         </li>
-        
       </ul>
     </div>
   </div>
